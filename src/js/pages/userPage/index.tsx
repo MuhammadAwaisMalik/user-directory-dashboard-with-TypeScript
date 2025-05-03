@@ -71,7 +71,6 @@ const UsersPage: React.FC<UsersPageProps> = ({ data }) => {
       currentPage * USERS_PER_PAGE
     );
 
-    //  If current page becomes empty, go to previous page
     if (currentUsers?.length === 0 && currentPage > 1) {
       setCurrentPage((prev) => prev - 1);
     } else {

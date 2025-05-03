@@ -41,7 +41,6 @@ export default async function Home() {
 
     const data = await res.json();
 
-    // ✅ Validate and parse the API response
     const parsed = ApiResponseSchema.parse(data);
 
     users = parsed.results;
