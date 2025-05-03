@@ -33,6 +33,8 @@ const UserTable: React.FC<UserTableProps> = ({
   onEdit,
   onDelete,
 }) => {
+  console.log(users, "for testing");
+
   return (
     <div
       className={`overflow-x-auto rounded-xl shadow-md border border-gray-200 ${className}`}
