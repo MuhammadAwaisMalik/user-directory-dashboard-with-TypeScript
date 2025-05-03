@@ -72,7 +72,7 @@ const UserTable: React.FC<UserTableProps> = ({
                 >
                   <td className="px-6 py-4">
                     <Image
-                      src={user.picture.thumbnail}
+                      src={user?.picture?.thumbnail}
                       alt={user.name.first}
                       width={40}
                       height={40}
